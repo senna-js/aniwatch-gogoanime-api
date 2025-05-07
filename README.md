@@ -1148,4 +1148,8 @@ console.log(data);
 
 - [consumet.ts](https://github.com/consumet/consumet.ts)
 - [ghoshRitesh12](https://github.com/ghoshRitesh12)
+<<<<<<< HEAD
 - [senna-js](https://github.com/senna-js)
+=======
+- [senna-js](https://github.com/senna-js)
+>>>>>>> 32fdad7 (update fix)

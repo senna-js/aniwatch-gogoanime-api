@@ -43,7 +43,7 @@ const makeAniWatchObj = (aniwatch_base: string): AniWatchConfig => {
   };
 };
 
-export const DEFAULT_HIANIME_URL = "https://hianime.to";
+export const DEFAULT_HIANIME_URL = "https://hianimez.to";
 
 // return fn
 const URL_fn = async (): Promise<AniWatchConfig> => {

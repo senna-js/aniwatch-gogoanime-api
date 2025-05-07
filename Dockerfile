@@ -1,13 +1,21 @@
-FROM node:21-slim
+# Using Node.js 20 LTS with Alpine for smaller size and better security
+FROM node:20-alpine
 
 WORKDIR /ani
 
-COPY src /ani/src/
-COPY package.json /ani/
-COPY tsconfig.json /ani/
+# Copy package files first for better layer caching
+COPY package*.json ./
+COPY tsconfig.json ./
 
-RUN npm install
+# Install dependencies
+RUN npm install --production
+
+# Copy source files
+COPY src ./src/
+
+# Build the application
 RUN npm run build
 
-CMD ["npm", "run", "start"]
+# Runtime configuration
 EXPOSE 3001
+CMD ["npm", "run", "start"]
