@@ -41,15 +41,15 @@ const makeGogoAnimeObj = (gogoanime_base: string): GogoAnimeConfig => {
   // console.log(gogoanime_base);
   return {
     BASE: gogoanime.BASE,
-    HOME: `${gogoanime_base}/home.html`,
-    SEARCH: `${gogoanime_base}/search.html`,
+    HOME: `${gogoanime_base}/`,
+    SEARCH: `${gogoanime_base}/search/`,
     CATEGORY: `${gogoanime_base}/category/`,
     MOVIES: `${gogoanime_base}/anime-movies.html`,
-    POPULAR: `${gogoanime_base}/popular.html`,
-    NEW_SEASON: `${gogoanime_base}/new-season.html`,
+    POPULAR: `${gogoanime_base}/popular/`,
+    NEW_SEASON: `${gogoanime_base}/new-season/`,
     SEASONS: `${gogoanime_base}/sub-category/`,
-    COMPLETED: `${gogoanime_base}/completed-anime.html`,
-    AJAX: "https://ajax.gogocdn.net/ajax",
+    COMPLETED: `${gogoanime_base}/status/completed/`,
+    AJAX: "https://gogoimg.space",
   };
 };
 
